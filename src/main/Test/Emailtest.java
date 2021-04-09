@@ -44,3 +44,13 @@ public class Emailtest {
 		email.addBcc(TEST_EMAILS);
 		assertEquals(3, email.getBccAddresses().size());
 	}
+    @Test
+	public void testgetHostName()
+	{
+		email.setHostName("localhost");
+		
+		String hostname=email.getHostName();
+		
+		assertEquals("localhost", hostname);
+		
+	}
