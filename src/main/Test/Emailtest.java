@@ -66,3 +66,12 @@ public class Emailtest {
 		
 	}
 	
+    public void testgetHostNamewithsession()
+	{
+		Properties properties=new Properties();
+		Session session=Session.getDefaultInstance(properties, null);
+		properties.put(EmailConstants.MAIL_HOST, "smtp.gmail.com");
+		email.setMailSession(session);
+		assertEquals("smtp.gmail.com", email.getHostName());
+		
+	}
