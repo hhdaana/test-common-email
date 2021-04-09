@@ -94,3 +94,11 @@ public class Emailtest {
 		email.addHeader(null, "value");
 		
 	}
+
+	@Test
+	public void testaddHeadervaluenull()
+	{
+		email.addHeader("header", null);
+		
+	}
+	
