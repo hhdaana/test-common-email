@@ -109,3 +109,10 @@ public class Emailtest {
 		
 	}
 	
+	@Test
+	public void testbuildMimeMessage() throws EmailException
+	{
+		email.addCc(TEST_EMAILS);
+		
+		email.buildMimeMessage();
+	}
