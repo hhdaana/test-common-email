@@ -133,3 +133,9 @@ public class Emailtest {
 		email.setSocketConnectionTimeout(15);
 		assertEquals(15, email.getSocketConnectionTimeout());
 	}
+
+	@Test
+	public void testsetFromm() throws EmailException
+	{
+		email.setFrom("Froms@gmail.com");
+	}
