@@ -129,3 +129,11 @@ public class Emailtest {
 		email.setMailSession(session);
 		email.getMailSession();
 	}
+
+    @Test
+	public void testgetSocketConnectionTimeout()
+	{
+		email.setSocketConnectionTimeout(15);
+		assertEquals(15, email.getSocketConnectionTimeout());
+	}
+	
