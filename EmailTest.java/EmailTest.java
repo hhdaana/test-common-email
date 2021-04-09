@@ -101,4 +101,11 @@ public class Emailtest {
 		email.addHeader("header", null);
 		
 	}
+
+	@Test
+	public void testaddReplyTo() throws EmailException
+	{
+		email.addReplyTo("123@gmail.com", "thanks");
+		
+	}
 	
