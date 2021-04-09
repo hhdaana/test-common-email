@@ -119,3 +119,13 @@ public class Emailtest {
 		
 		email.buildMimeMessage();
 	}
+
+    @Test
+	public void testgetMailSession() throws EmailException
+	{
+		Properties properties=new Properties();
+		Session session=Session.getDefaultInstance(properties, null);
+		properties.put(EmailConstants.MAIL_HOST, "smtp.gmail.com");
+		email.setMailSession(session);
+		email.getMailSession();
+	}
