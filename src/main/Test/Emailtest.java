@@ -149,3 +149,10 @@ public class Emailtest {
 		email.setSentDate(null);
 		email.getSentDate();
 	}
+    @Test
+	public void testgetSentDate()
+	{
+		Date today = new Date(12);
+		email.setSentDate(today);
+		email.getSentDate();
+	}
