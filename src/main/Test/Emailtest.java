@@ -75,3 +75,11 @@ public class Emailtest {
 		assertEquals("smtp.gmail.com", email.getHostName());
 		
 	}
+
+    @Test
+	public void testaddCC() throws EmailException
+	{
+		email.addCc("123@gmail.com");
+		assertEquals("123@gmail.com", email.getCcAddresses());
+		
+	}
