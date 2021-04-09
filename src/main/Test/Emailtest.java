@@ -83,3 +83,10 @@ public class Emailtest {
 		assertEquals("123@gmail.com", email.getCcAddresses());
 		
 	}
+
+    @Test
+	public void testaddHeader()
+	{
+		email.addHeader("header", "value");
+		
+	}
