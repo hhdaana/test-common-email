@@ -139,3 +139,10 @@ public class Emailtest {
 	{
 		email.setFrom("Froms@gmail.com");
 	}
+
+	@Test
+	public void testgetSentDatenull()
+	{
+		email.setSentDate(null);
+		email.getSentDate();
+	}
