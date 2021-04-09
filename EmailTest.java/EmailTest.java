@@ -75,3 +75,10 @@ public class Emailtest {
 		
 	}
 	
+	@Test
+	public void testaddCC() throws EmailException
+	{
+		email.addCc("123@gmail.com");
+		assertEquals("123@gmail.com", email.getCcAddresses());
+		
+	}
