@@ -111,3 +111,11 @@ public class Emailtest {
 		email.addReplyTo("123@gmail.com", "thanks");
 		
 	}
+
+    @Test
+	public void testbuildMimeMessage() throws EmailException
+	{
+		email.addCc(TEST_EMAILS);
+		
+		email.buildMimeMessage();
+	}
